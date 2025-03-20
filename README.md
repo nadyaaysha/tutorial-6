@@ -26,3 +26,8 @@ and refactoring for better readability and scalability in web server development
 
 In this milestone, simulating a slow response showed how a single-threaded server blocks all requests when one takes too long. A `/sleep` request delayed others, highlighting the need for multithreading
 or async processing to improve performance and scalability.
+
+### Commit (5) Reflection Notes
+
+In this final milestone, I've implemented ThreadPool to handle multiple client requests concurrently and improve efficiency. The ThreadPool create worker threads that continuously listen for new tasks and execute them asynchronously.
+Previously, the server handled requests one at a time, blocking new connections until the current request was processed. Now, multiple requests can be processed at the same time, improving responsiveness.
